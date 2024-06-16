@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Call G</title>
+    <title>Grandchild - In your phone!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
 </head>
 <body>
-    <h1 align="center">GrandChild in your phone</h1>
-    <p align="center">add number</p>
-    <hr>
-    <h4>당신의 티켓팅 도우미, CallG입니다.</h4>
-    <a href="/chat.html">넘어가기</a>
-    </body>
+    <div class="container">
+        <header>
+            <h1>Grandchild</h1>
+            <h2>In your <span class="colorful">phone</span>!</h2>
+        </header>
+        <main>
+            <button id="add-number">Add Number</button>
+            <div class="keypad">
+                <div class="key">1</div>
+                <div class="key">2<br><small>ABC</small></div>
+                <div class="key">3<br><small>DEF</small></div>
+                <div class="key">4<br><small>GHI</small></div>
+                <div class="key">5<br><small>JKL</small></div>
+                <div class="key">6<br><small>MNO</small></div>
+                <div class="key">7<br><small>PQRS</small></div>
+                <div class="key">8<br><small>TUV</small></div>
+                <div class="key">9<br><small>WXYZ</small></div>
+                <div class="key">*</div>
+                <div class="key">0<br><small>+</small></div>
+                <div class="key">#</div>
+            </div>
+            <button class="call-button">
+            <a href ="chat.html">
+                <img src="/img/call-icon.png" alt="Call">
+            </a>
+            </button>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
 </html>
+

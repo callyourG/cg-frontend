@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatting</title>
+    <title>Call G</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/chat.css">
 </head>
 <body>
-    <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/8da2fdb6-8ebe-4b5a-9a4c-c6104c2a82b1"></iframe>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Call G</h1>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="message system">
+                <p>당신의 티켓을 구해드리는 서비스, Call G 입니다.<br>무엇을 도와드릴까요?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type a message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    <script src="chat.js"></script>
 </body>
 </html>

@@ -35,6 +35,12 @@ h2 {
     color: #00ff00;
 }
 
+#phone-number {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 #add-number {
     color: #0000ff;
     background: none;

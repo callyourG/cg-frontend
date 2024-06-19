@@ -14,19 +14,19 @@
             <h2>In your <span class="colorful">phone</span>!</h2>
         </header>
         <main>
-            <button id="add-number">Add Number</button>
+            <div id="phone-number"></div> <!-- 전화번호가 표시될 곳 -->
             <div class="keypad">
-                <div class="key">1</div>
-                <div class="key">2<br><small>ABC</small></div>
-                <div class="key">3<br><small>DEF</small></div>
-                <div class="key">4<br><small>GHI</small></div>
-                <div class="key">5<br><small>JKL</small></div>
-                <div class="key">6<br><small>MNO</small></div>
-                <div class="key">7<br><small>PQRS</small></div>
-                <div class="key">8<br><small>TUV</small></div>
-                <div class="key">9<br><small>WXYZ</small></div>
+                <div class="key" onclick="addToPhoneNumber('1')">1</div>
+                <div class="key" onclick="addToPhoneNumber('2')">2<br><small>ABC</small></div>
+                <div class="key" onclick="addToPhoneNumber('3')">3<br><small>DEF</small></div>
+                <div class="key" onclick="addToPhoneNumber('4')">4<br><small>GHI</small></div>
+                <div class="key" onclick="addToPhoneNumber('5')">5<br><small>JKL</small></div>
+                <div class="key" onclick="addToPhoneNumber('6')">6<br><small>MNO</small></div>
+                <div class="key" onclick="addToPhoneNumber('7')">7<br><small>PQRS</small></div>
+                <div class="key" onclick="addToPhoneNumber('8')">8<br><small>TUV</small></div>
+                <div class="key" onclick="addToPhoneNumber('9')">9<br><small>WXYZ</small></div>
                 <div class="key">*</div>
-                <div class="key">0<br><small>+</small></div>
+                <div class="key" onclick="addToPhoneNumber('0')">0<br><small>+</small></div>
                 <div class="key">#</div>
             </div>
             <button onclick="location.href='chat.html';" class="call-button">

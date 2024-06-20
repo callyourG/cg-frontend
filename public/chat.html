@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Call G</title>
+    <!-- 구글 폰트 사용 -->
+    <title>Call G</title> 
     <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
+    <!-- 외부 css 파일 연결 -->
     <link rel="stylesheet" href="/css/chat.css">
 </head>
 <body>
@@ -22,12 +24,15 @@
             <button id="send-button">Send</button>
         </div>
     </div> -->
+    <!--Dialogflow iframe 사용 -->
     <div class = "iframe-container">
         <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/8da2fdb6-8ebe-4b5a-9a4c-c6104c2a82b1"></iframe>
     </div>
+    <!-- 종료 버튼 -->
     <p>종료하기</p>
     <button onclick="window.location.href='end.html';" class="call-button">
     </button>
+    <!-- 외부 JavaScript 파일 연결  -->
     <script src="/javascript/chat.js"></script>
 </body>
 </html>

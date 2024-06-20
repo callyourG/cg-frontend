@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grandchild - In your phone!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.12.2/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.12.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+          <h1>Grandchild</h1>
+          <h2>In your <span class="colorful">phone</span>!</h2>
+      </header>
+      <main>
+          <div id="phone-number"></div> <!-- 전화번호가 표시될 곳 -->
+          <div class="keypad">
+              <div class="key" onclick="addToPhoneNumber('1')">1</div>
+              <div class="key" onclick="addToPhoneNumber('2')">2<br><small>ABC</small></div>
+              <div class="key" onclick="addToPhoneNumber('3')">3<br><small>DEF</small></div>
+              <div class="key" onclick="addToPhoneNumber('4')">4<br><small>GHI</small></div>
+              <div class="key" onclick="addToPhoneNumber('5')">5<br><small>JKL</small></div>
+              <div class="key" onclick="addToPhoneNumber('6')">6<br><small>MNO</small></div>
+              <div class="key" onclick="addToPhoneNumber('7')">7<br><small>PQRS</small></div>
+              <div class="key" onclick="addToPhoneNumber('8')">8<br><small>TUV</small></div>
+              <div class="key" onclick="addToPhoneNumber('9')">9<br><small>WXYZ</small></div>
+              <div class="key">*</div>
+              <div class="key" onclick="addToPhoneNumber('0')">0<br><small>+</small></div>
+              <div class="key">#</div>
+          </div>
+          <button onclick="location.href='chat.html';" class="call-button">
+          
+          </button>
+      </main>
+  </div>
+  <script src="index.js"></script>
+  </body>
+</html>

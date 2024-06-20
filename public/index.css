@@ -1,0 +1,92 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ff0000;
+    margin: 0;
+}
+
+h2 {
+    font-size: 18px;
+    color: #000;
+    margin: 5px 0 0 0;
+}
+
+.colorful {
+    color: #00ff00;
+}
+
+#phone-number {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#add-number {
+    color: #0000ff;
+    background: none;
+    border: none;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.key {
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.key small {
+    font-size: 10px;
+}
+
+.call-button {
+    /* background-color: #2ECF56; */
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    background-image: url('img/call.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.call-button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}

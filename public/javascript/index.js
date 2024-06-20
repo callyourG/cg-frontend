@@ -22,7 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
         messagingSenderId: "690668716802",
         appId: "1:690668716802:web:6ca04a7fc70b7057c8b81b"
     };
-    firebase.initializeApp(firebaseConfig);
+    if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+      } else {
+        firebase.app();
+      }
 
     // addToPhoneNumber 함수를 글로벌 범위로 설정
     window.addToPhoneNumber = addToPhoneNumber;

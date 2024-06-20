@@ -14,10 +14,6 @@
     max-width: 100px;
     vertical-align: middle;
   }
-  .textbox{
-    padding: auto;
-    vertical-align: middle;
-  }
   .product .price {
     font-size: 16px;
     font-weight: 600;
@@ -29,9 +25,6 @@
   .product .date {
     color: grey;
     font-size: 13px;
-  }
-  p{
-    line-height: normal;
   }
 
   .navbar-brand{

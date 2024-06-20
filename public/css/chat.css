@@ -96,7 +96,7 @@ body {
     border-radius: 50%;
     padding: 20px;
     cursor: pointer;
-    background-image: url('img/reject.png');
+    background-image: url('/img/reject.png');
     background-size: cover;
     background-position: center;
 }

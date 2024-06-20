@@ -3,11 +3,12 @@
     padding: 10px;
   }
   .thumbnail {
-    max-width: 200px;
+    max-width: 100px;
     width: 100%;
     border-radius: 10px;
     background-size: cover;
     background-position: center;
+    background-color: gray;
   }
   .product .price {
     font-size: 16px;
@@ -20,4 +21,18 @@
   .product .date {
     color: grey;
     font-size: 13px;
+  }
+
+  .navbar-brand{
+    padding-left: 5%;
+  }
+  #navbarNav{
+    padding-left: 2px;
+  }
+  .nav-link{
+    padding-left: 10px;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: left;
   }

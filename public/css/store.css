@@ -6,9 +6,17 @@
     max-width: 100px;
     width: 100%;
     border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    background-color: gray;
+    align-items: center;
+    margin:10px;
+    line-height: 200px;
+  }
+  img{
+    max-width: 100px;
+    vertical-align: middle;
+  }
+  .textbox{
+    padding: auto;
+    vertical-align: middle;
   }
   .product .price {
     font-size: 16px;
@@ -21,6 +29,9 @@
   .product .date {
     color: grey;
     font-size: 13px;
+  }
+  p{
+    line-height: normal;
   }
 
   .navbar-brand{

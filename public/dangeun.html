@@ -68,12 +68,18 @@
     db.collection('concert').get().then((querySnapshot) => {
       querySnapshot.forEach((doc) => {
         console.log(doc.id, " => ", doc.data());
+        
+        var imgurl = doc.data().이미지;
         // 데이터 템플릿 생성 및 추가
         var 템플릿 = `<div class="product">
-            <div class="thumbnail" style="background-image: url('https://via.placeholder.com/350')"></div>
+            <div class="thumbnail">
+              <img src="${imgurl} src="${doc.data().제목}" width="100px">
+            </div>
             <div class="flex-grow-1 p-4">
+              <br>
               <h5 class="title">${doc.data().제목}</h5>
               <p class="date">${doc.data().날짜}</p>
+              <p class="content">${doc.data().내용}</p>
               <p class="price">${doc.data().가격}</p>
             
             </div>

@@ -37,25 +37,34 @@
      </style>
   </head>
   <body>
+    <!-- 로그인 폼 컨테이너 -->
     <div class="container">
       <h1>Login</h1>
+      <!-- 사용자 이름 입력 -->
       <div class="mb-3">
         <input type="text" class="form-control" placeholder="name" id="name-new">
       </div>
+      <!-- 이메일 입력 -->
       <div class="mb-3">
         <input type="email" class="form-control" placeholder="email" id="email-new">
       </div>
+      <!-- 비밀번호 입력 -->
       <div class="mb-3">
         <input type="password" class="form-control" placeholder="pw" id="pw-new">
       </div>
+      <!-- 가입 버튼 -->
       <button type="submit" class="btn btn-primary" id="register">가입하기</button>
     </div>
+    <!-- 이전 페이지로 돌아가기 링크 -->
     <div class="back"><a href="index.html">이전으로 돌아가기</a></div>
+    <!-- 사용자 가입 처리 스크립트 -->
     <script>
+      // 가입 버튼 클릭 시 시행
       $('#register').click(function(){
         var email = $('#email-new').val();
         var pw = $('#pw-new').val();
     
+        // Firebase를 이용한 사용자 가입 처리
         firebase.auth().createUserWithEmailAndPassword(email, pw).then((result)=>{
             console.log("successed!");
             console.log(result.user);

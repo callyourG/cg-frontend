@@ -1,34 +1,68 @@
-<div class="container mt-3">
-    <div class="mb-3">
-      <input type="text" class="form-control" placeholder="name" id="name-new">
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/css/login.css"> -->
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.12.2/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.12.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="/javascript/login.js"></script> -->
+     <style>
+      body{
+        align-items: center;
+        text-align: center;
+        display: block;
+      }
+      .container{
+        padding: 30px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        width: 50%;
+        margin: auto;
+        margin-top: 100px;
+      }
+      .back{text-align: center; margin-top: 50px;}
+     </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="name" id="name-new">
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="email" id="email-new">
+      </div>
+      <div class="mb-3">
+        <input type="password" class="form-control" placeholder="pw" id="pw-new">
+      </div>
+      <button type="submit" class="btn btn-primary" id="register">가입하기</button>
     </div>
-    <div class="mb-3">
-      <input type="email" class="form-control" placeholder="email" id="email-new">
-    </div>
-    <div class="mb-3">
-      <input type="password" class="form-control" placeholder="pw" id="pw-new">
-    </div>
-    <button type="submit" class="btn btn-primary" id="register">가입하기</button>
- </div>
-
- <script>
-    const db = firebase.firestore();
-    const storage = firebase.storage();
-
-    $('#register').click(function(){
-
-        var 이메일 = $('#email-new').val();
-        var 패스워드 = $('#pw-new').val();
-
-        firebase.auth().createUserWithEmailAndPassword(이메일,패스워드).then((result)=>{
-            console.log(result)
-            console.log(result.user)
-        })
-      })
-
+    <div class="back"><a href="index.html">이전으로 돌아가기</a></div>
+    <script>
+      $('#register').click(function(){
+        var email = $('#email-new').val();
+        var pw = $('#pw-new').val();
     
+        firebase.auth().createUserWithEmailAndPassword(email, pw).then((result)=>{
+            console.log("successed!");
+            console.log(result.user);
+            window.location.href='dangeun.html';
+        }).catch()
+      })
+    </script>
+  </body>
+</html>
 
- </script>
-
-
- </script>
